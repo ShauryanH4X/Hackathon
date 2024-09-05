@@ -3,34 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Carbon Credits</title>
+    <title>CarbonX -Home</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section id="Top">
-        
-    </section>
-    <section id="SideMenu">
-        <div id="Sidenav">
-            <button href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</button>
-            <a href="#">Personal</a>
-            <a href="#">Official</a>
-            <a href="Industrial.html">Industrial</a><!--Real Shit/Give me Data-->
-          </div>          
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-    </section>
-    <section>
-        <!-- Lets See
-        <div id="Calc">
-            <h5>Carbon Footprint Calculator</h5>
+    <header>
+        <section id="SideMenu">
+            <div id="Sidenav">
+                <button class="closebtn" onclick="closeNav()">&times;</button>
+                <a href="index.html">Home</a>
+                <a href="emission.html">Emission</a>
+                <a href="carbon-neutrality.html">Carbon Neutrality</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="#ExLinks">Contact Us</a>
+            </div>
+        </section>
+        <div class="container">
+            <div class="logo">
+                <img src="images\logo.png" alt="[CarbonX] Logo">
+            </div>
+            <div class="topnav">
+            <nav>
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="emission.html">Emission Estimation</a></li>
+                    <li><a href="carbon-neutrality.html">Carbon Neutrality</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="#ExLinks">Contact Us</a></li>
+                </ul>
+            </nav>
+            </div>
+            <div class="auth-buttons">
+                <button class="btn" id="loginBtn">Login</button>
+                <button class="btn secondary" id="registerBtn">Register</button>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         </div>
-        -->
-    </section>
-    <section id="Trends">
+    </header>
 
-    </section>
+    <main>
+        <section class="hero">
+            <h1>WELCOME TO CarbonX</h1>
+            <p>A tool to help Indian coal mines achieve carbon neutrality through emission estimation and sustainable practices.</p>
+            <a href="get-started.html" class="btn" style="margin-left:40px;margin-right:40px;">Get Started</a>
+            <a href="learn-more.html" class="btn secondary">Learn More</a>
+        </section>
+    </main>
+    <div id="Trends">
+        <button class="closebtn2" onclick="close_Nav()" style="cursor:pointer;background-color:lightgreen;border:none;float:right;font-size: 28px;">&times;</button>
+        <h2 style="display:inline-block;">NEWS</h2>
+        <a href="https://www.greenelement.co.uk/blog/the-race-to-zero-emissions/" target="_blank" rel="noopener">
+            <div id="Article">
+            <img src=".\images\image1.jpg" alt="An Image.." width="90%">
+            <h3>The Race to Zero Emissions: three campaigns your organisation can ...</h3>
+            </div>
+        </a>
+        <a href="https://www.sciencedirect.com/topics/engineering/clean-coal-technology" target="_blank" rel="noopener">
+            <div id="Article">
+            <img src=".\images\image2.png" alt="An Image.." width="90%">
+            <h3>Clean Coal Technology - an overview...</h3>
+            </div>
+        </a>
+        <a href="https://www.sciencedirect.com/science/article/abs/pii/S036031992402398X#:~:text=Coal%20plasma%20gasification%20technology%20is,attaining%20the%20sustainable%20development%20goals" target="_blank" rel="noopener">
+            <div id="Article">
+            <img src=".\images\image3.png" alt="An Image.." width="90%">
+            <h3>Adoption of advanced coal gasification: A panacea to carbon footprint reduction and hydro...</h3>
+            </div>
+        </a>
+        <br>
+        <br>
+        <br>
+    </div>
     <section id="ExLinks">
+        <div class="bottom_info">
+            <div class="IMP_links">
+                <h2>Important Links</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.sih.gov.in/sih2024PS?technology_bucket=OA==&category=U29mdHdhcmU=&organization=TWluaXN0cnkgb2YgQ29hbA==&organization_type=QWxs">Problem Statement</a>
+                    </li>
+                    <li>
+                        <a href="https://www.greenelement.co.uk/blog/category/carbon-footprint-blogs/">Reference</a>
+                    </li>
+                    <li>
+                        <a href="https://www.sciencedirect.com/topics/engineering/clean-coal-technology">Reference</a>
+                    </li>
+                    <li>
+                        NPTEL/Local Chapter
+                    </li>
+                    <li>
+                        Online Application form for No Dues
+                    </li>
+                    <li>
+                        AICTE National Innovation and Startup Policy
+                    </li>
+                    <li>
+                        AICTE
+                    </li>
+                    <li>
+                        R.G.P.V Bhopal
+                    </li>
+                    <li>
+                        Right to Information Act
+                    </li>
+                    <li>
+                        <a href="https://youtu.be/bYb7YLsXvzg?si=0FZImMCyDWoOZXQJ">Informative Video</a>
+                    </li>
+                    <br>
+                    <br>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="https://www.sih.gov.in/sih2024PS?technology_bucket=OA==&category=U29mdHdhcmU=&organization=TWluaXN0cnkgb2YgQ29hbA==&organization_type=QWxs">Problem Statement</a>
+                    </li>
+                    <li>
+                        <a href="https://www.greenelement.co.uk/blog/category/carbon-footprint-blogs/">Reference</a>
+                    </li>
+                    <li>
+                        <a href="https://www.sciencedirect.com/topics/engineering/clean-coal-technology">Reference</a>
+                    </li>
+                    <li>
+                        NPTEL/Local Chapter
+                    </li>
+                    <li>
+                        Online Application form for No Dues
+                    </li>
+                    <li>
+                        AICTE National Innovation and Startup Policy
+                    </li>
+                    <li>
+                        AICTE
+                    </li>
+                    <li>
+                        R.G.P.V Bhopal
+                    </li>
+                    <li>
+                        Right to Information Act
+                    </li>
+                    <li>
+                        <a href="https://youtu.be/bYb7YLsXvzg?si=0FZImMCyDWoOZXQJ">Informative Video</a>
+                    </li>
+                    <br>
+                    <br>
+                </ul>
+            </div>
+            <div class="Get_touched">
+                <div class="Get_touched_up">
+                    <h2>Contact Us</h2>
+                    <p>Madhav Institute of Technology & <br>Science (MITS), Gola ka Mandir, <br>Gwalior - 474005, Madhya Pradesh, India</p>
+                    <p><a href="mailto:clubmatrix300@gmail.com">
+                        Email : clubmatrix300@gmail.com
+                    </a></p>
+                    <p>
+                        Phone: <a href="#">Will Add</a><br>
+                        Phone: <a href="#">Will add</a>
+                    </p>
+                </div>
+                <div class="footer_location">
+                    <h2> Locate Us </h2>
+                    <a href="https://goo.gl/maps/2dUzcDwGhXiBWnUJ7" class="gread_linebtn"> View in Map </a>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
     </section>
-    <script src="index.js"></script>
+    <footer>
+        <p>&copy; 2024 CarbonX. All rights reserved.</p>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="loginClose">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="loginUsername">Username:</label>
+                <input type="text" id="loginUsername" name="username" required>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="password" required>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="registerClose">&times;</span>
+            <h2>Register</h2>
+            <form id="registerForm">
+                <label for="registerUsername">Username:</label>
+                <input type="text" id="registerUsername" name="username" required>
+                <label for="registerEmail">Email:</label>
+                <input type="email" id="registerEmail" name="email" required>
+                <label for="registerPassword">Password:</label>
+                <input type="password" id="registerPassword" name="password" required>
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

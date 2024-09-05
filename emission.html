@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emission Estimation</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+    <script defer src="scripts.js"></script> <!-- Link to the JavaScript file -->
+</head>
+<body>
+    <header>
+        <section id="SideMenu">
+            <div id="Sidenav">
+                <button class="closebtn" onclick="closeNav()">&times;</button>
+                <a href="index.html">Home</a>
+                <a href="emission.html">Emission</a>
+                <a href="carbon-neutrality.html">Carbon Neutrality</a>
+                <a href="dashboard.html">Dashboard</a>
+            </div>
+        </section>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo"> <!-- Replace with your logo image -->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="emission.html">Emission Estimation</a></li>
+                    <li><a href="carbon-neutrality.html">Carbon Neutrality</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn">Login</a>
+                <a href="register.html" class="btn secondary">Register</a>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+    </header>
+    
+    <main>
+        <section>
+            <h1>Emission Estimation</h1>
+            <form id="emission-form">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>[Back]</th>
+                            <th>Activity</th>
+                            <th>Quantity</th>
+                            <th>Units</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Excavation</td>
+                            <td><input type="number" id="excavation" value="500" aria-label="Excavation"></td>
+                            <td>Tons</td>
+                        </tr>
+                        <tr>
+                            <td>Transportation</td>
+                            <td><label>Transportation:<input type="number" id="transportation" value="100" aria-label="Excavation"></label></td>
+                            <td>Kms</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button" class="btn" onclick="calculateEmissions()">Calculate Emissions</button>
+            </form>
+
+            <section id="results">
+                <h2>Results</h2>
+                <div id="emission-results">
+                    <p class="results"></p>
+                    <!-- Display Total Emissions Here -->
+                </div>
+            </section>
+        </section>
+
+        <section>
+            <h2>Technology Impact</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Technology Type</th>
+                        <th>Impact Estimate</th>
+                        <th>Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Electric Vehicles</td>
+                        <td>-20% Emissions</td>
+                        <td>$XXX</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><strong>Area for Afforestation:</strong> 100 Acres</p>
+            <p><strong>Estimated Carbon Offset:</strong> XXXX Tons CO2</p>
+            <div id="suggested-pathways">
+                <h3>Suggested Pathways</h3>
+                <ul>
+                    <li>Adopt electric vehicles</li>
+                    <li>Plant 1000 trees in the designated area</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="charts">
+            <div class="chart" id="emission-trends">
+                <h3>Emission Trends</h3>
+                <!-- Include your chart library and generate the chart here -->
+            </div>
+            <div class="chart" id="carbon-sink-analysis">
+                <h3>Carbon Sink Analysis</h3>
+                <!-- Include your chart library and generate the pie chart here -->
+            </div>
+        </section>
+
+        <section id="carbon-neutrality-progress">
+            <h2>Carbon Neutrality Progress</h2>
+            <!-- Include your chart library and generate the bar chart here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 [Your Company]. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
