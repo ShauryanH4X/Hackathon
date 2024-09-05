@@ -1,0 +1,40 @@
+#Trends {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; /* Gap between grid items */
+    padding: 20px;
+  }
+  
+  #Trends h2 {
+    grid-column: span 3;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  #Article {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  #Article a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  #Article img {
+    width: 100%; /* Set image to take full width of the article */
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  #Article h3 {
+    font-size: 20px;
+    margin: 5px 0;
+    font-weight: normal;
+  }
+  

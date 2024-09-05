@@ -217,43 +217,6 @@ table tr:nth-child(even) {
     text-decoration: none;
     cursor: pointer;
 }
-#Trends{
-    display:block;
-    height:100%;
-    width:250px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    border-radius: 10px;
-    padding:10px;
-    background-color:lightgreen;
-    overflow: auto;
-    transition: 0.3s ease;
-    padding-top: 20px;
-    align-content: center;
-    align-items: center;
-    text-align: center;
-}
-#Trends h2{
-  text-align: center;
-  color:#ffffff;
-}
-#Article
-{
-  align-content: center;
-  align-items: center;
-  text-align: center;
-  padding-bottom: 0px;
-  padding-top: 5px;
-}
-#Article img{
-  align-items: center;
-  border-radius:5px;
-}
-#Trends a{
-  text-decoration: none;
-  color:blue;
-}
 .bottom_info
 {
     background-color:navy;
@@ -310,7 +273,7 @@ table tr:nth-child(even) {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 2;
+    z-index: 1;
     top: 0;
     left: 0;
     border-radius: 10px;
@@ -319,7 +282,7 @@ table tr:nth-child(even) {
     transition: 0.5s;
     padding-top: 60px;
 }
-  
+
 #Sidenav a{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
