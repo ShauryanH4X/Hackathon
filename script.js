@@ -1,11 +1,20 @@
 function calculateEmissions() {
-    let ex = parseFloat(document.getElementById('excavation').value);
-    let tr = parseFloat(document.getElementById('transportation').value);
-    let totalEmissions = ex * 0.5 + tr * 0.2;
-    console.log(totalEmissions);
-    document.querySelector('.results').innerHTML = 'Total Emissions: '+totalEmissions +' tons CO2';
-}
+    let excavation = parseFloat(document.getElementById('excavation').value);
+    let transportation = parseFloat(document.getElementById('transportation').value);
+    const excavationEmissionFactor = 0.05;
+    const transportationEmissionFactor = 0.02;
 
+    let excavationEmissions = excavation * excavationEmissionFactor;
+    let transportationEmissions = transportation * transportationEmissionFactor;
+
+    let totalEmissions = excavationEmissions + transportationEmissions;
+
+    document.querySelector("#emission-results .results").innerHTML = `
+        Excavation Emissions: ${excavationEmissions.toFixed(2)} tons CO2<br>
+        Transportation Emissions: ${transportationEmissions.toFixed(2)} tons CO2<br>
+        Total Emissions: ${totalEmissions.toFixed(2)} tons CO2
+    `;
+}
 document.addEventListener('DOMContentLoaded', function(){
     // Example of handling the Calculate Emissions button click
     document.querySelector('.estimation-form .btn').addEventListener('click', function() {
@@ -61,7 +70,7 @@ function close_Nav() {
 }
 
 function openNav2() {
-    document.getElementById("Trends").style.width = "300px"; // Open the section
+    document.getElementById("Trends").style.width = "300px";
 }
 function profile(user){
     document.getElementById('auth').innerHTML = '<button type="button" class="btn">'+user+'</button>';

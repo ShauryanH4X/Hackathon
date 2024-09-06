@@ -21,7 +21,7 @@
         </section>
         <div class="container">
             <div class="logo">
-                <img src="images/logo.png" alt="Logo"> <!-- Replace with your logo image -->
+                <img src="images/logo.png" alt="Logo">
             </div>
             <nav>
                 <ul>
@@ -60,41 +60,21 @@
                         </tr>
                         <tr>
                             <td>Petrol</td>
-                            <td><input type="number" id="transportation" value="0" aria-label="Excavation"></td>
-                            <td>Kms</td>
-                        </tr>
-                        <tr>
-                            <td>Diesel</td>
-                            <td><input type="number" id="transportation" value="0" aria-label="Excavation"></td>
-                            <td>Kms</td>
-                        </tr>
-                        <tr>
-                            <td>Electric</td>
-                            <td><input type="number" id="transportation" value="0" aria-label="Excavation"></td>
-                            <td>Kms</td>
-                        </tr>
-                        <tr>
-                            <td>CNG</td>
-                            <td><input type="number" id="transportation" value="0" aria-label="Excavation"></td>
-                            <td>Kms</td>
-                        </tr>
-                        <tr>
-                            <td>Coal</td>
-                            <td><input type="number" id="transportation" value="0" aria-label="Excavation"></td>
+                            <td><input type="number" id="transportation" value="0" aria-label="Transportation"></td>
                             <td>Kms</td>
                         </tr>
                     </tbody>
+                </table>
                 <button type="button" class="btn" onclick="calculateEmissions()">Calculate Emissions</button>
             </form>
             <div id="results">
                 <h2>Results</h2>
                 <div id="emission-results">
                     <p class="results"></p>
-                    <!-- Display Total Emissions Here -->
                 </div>
             </div>
         </section>
-
+    
         <section>
             <h2>Technology Impact</h2>
             <table>
@@ -123,26 +103,31 @@
                 </ul>
             </div>
         </section>
-
+    
         <section class="charts">
             <div class="chart" id="emission-trends">
                 <h3>Emission Trends</h3>
+                <canvas id="emissionChart"></canvas> 
                 <!-- Include your chart library and generate the chart here -->
             </div>
             <div class="chart" id="carbon-sink-analysis">
                 <h3>Carbon Sink Analysis</h3>
+                <canvas id="carbonSinkChart"></canvas>
                 <!-- Include your chart library and generate the pie chart here -->
             </div>
         </section>
-
+    
         <section id="carbon-neutrality-progress">
             <h2>Carbon Neutrality Progress</h2>
             <!-- Include your chart library and generate the bar chart here -->
         </section>
     </main>
+    
     <footer>
         <p>&copy; 2024 CarbonX. All rights reserved.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="emission.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
