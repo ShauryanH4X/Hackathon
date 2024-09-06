@@ -8,23 +8,40 @@
 </head>
 <body>
     <header>
+        <section id="SideMenu">
+            <div id="Sidenav">
+                <button class="closebtn" onclick="closeNav()">&times;</button>
+                <a href="index.html">Home</a>
+                <a href="emission.html">Emission</a>
+                <a href="carbon-neutrality.html">Carbon Neutrality</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="News.html">News</a>
+            </div>
+        </section>
         <div class="container">
             <div class="logo">
-                <img src="images/logo.png" alt="[CarbonX] Logo"> <!-- Replace with your logo image -->
+                <img src="images\logo.png" alt="[CarbonX] Logo">
             </div>
+            <div class="topnav">
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="emission.html">Emission Estimation</a></li>
                     <li><a href="carbon-neutrality.html">Carbon Neutrality</a></li>
                     <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="News.html">News</a></li>
                 </ul>
             </nav>
-            <div class="auth-buttons">
-                <button class="btn" id="loginBtn">Login</button>
-                <button class="btn secondary" id="registerBtn">Register</button>
             </div>
+            <div class="auth-buttons" id="auth">
+                <button class="btn" id="loginBtn"><a href="login.html">Login</a></button>
+                <button class="btn secondary" id="registerBtn"><a href="register.html">Register</a></button>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         </div>
     </header>
+    <footer>
+        <p>&copy; 2024 CarbonX. All rights reserved.</p>
+    </footer>
 </body>
 </html>

@@ -3,30 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - [App Name]</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Dashboard - CarbonX</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
+        <section id="SideMenu">
+            <div id="Sidenav">
+                <button class="closebtn" onclick="closeNav()">&times;</button>
+                <a href="index.html">Home</a>
+                <a href="emission.html">Emission</a>
+                <a href="carbon-neutrality.html">Carbon Neutrality</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="News.html">News</a>
+            </div>
+        </section>
         <div class="container">
             <div class="logo">
-                <img src="logo.png" alt="[CarbonX] Logo"> <!-- Replace with your logo image -->
+                <img src="images\logo.png" alt="[CarbonX] Logo">
             </div>
+            <div class="topnav">
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="emission.html">Emission Estimation</a></li>
                     <li><a href="carbon-neutrality.html">Carbon Neutrality</a></li>
                     <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="News.html">News</a></li>
                 </ul>
             </nav>
-            <div class="auth-buttons">
-                <button class="btn" id="loginBtn">Login</button>
-                <button class="btn secondary" id="registerBtn">Register</button>
             </div>
+            <div class="auth-buttons" id="auth">
+                <button class="btn" id="loginBtn"><a href="login.html">Login</a></button>
+                <button class="btn secondary" id="registerBtn"><a href="register.html">Register</a></button>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         </div>
     </header>
-
     <main>
         <section>
             <h1>User Dashboard</h1>
@@ -36,9 +49,9 @@
     </main>
 
     <footer>
-        <!-- Include the same footer as index.html -->
+        <p>&copy; 2024 CarbonX. All rights reserved.</p>
     </footer>
 
-    <script src="js/scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

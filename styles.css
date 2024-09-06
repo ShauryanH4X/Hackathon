@@ -54,7 +54,11 @@ nav ul li a:hover {
 .auth-buttons .btn {
     margin-left: 10px;
 }
-
+.auth-buttons a{
+    text-decoration:none;
+    color:white;
+    
+}
 footer {
     background-color: #0056b3;
     color: white;
@@ -99,7 +103,7 @@ input[type="number"], input[type="text"], input[type="password"] {
     margin-bottom: 10px;
 }
 
-input[type="number"]:focus, input[type="text"]:focus, input[type="password"]:focus {
+input[type="number"]:focus, input[type="email"]:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime-local"]:focus{
     border-color: #007bff;
     outline: none;
 }
@@ -327,3 +331,10 @@ table tr:nth-child(even) {
       transform: rotate(720deg);
     }
   }
+.sign_up{
+    align-items:center;
+    justify-content: center;
+    display:inline-flex;
+    flex-direction: column;
+    width:400px;
+}

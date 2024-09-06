@@ -4,25 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - [App Name]</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/scripts.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="header">
-            <img src="images/logo.png" alt="[App Name] Logo" class="logo">
+        <section id="SideMenu">
+            <div id="Sidenav">
+                <button class="closebtn" onclick="closeNav()">&times;</button>
+                <a href="index.html">Home</a>
+                <a href="emission.html">Emission</a>
+                <a href="carbon-neutrality.html">Carbon Neutrality</a>
+                <a href="dashboard.html">Dashboard</a>
+            </div>
+        </section>
+        <div class="container">
+            <div class="logo">
+                <img src="images\logo.png" alt="[CarbonX] Logo">
+            </div>
+            <div class="topnav">
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="emission.html">Emission Estimation</a></li>
                     <li><a href="carbon-neutrality.html">Carbon Neutrality</a></li>
                     <li><a href="dashboard.html">Dashboard</a></li>
                 </ul>
             </nav>
-            <div class="auth-buttons">
-                <a href="login.html" class="btn">Login</a>
-                <a href="register.html" class="btn">Register</a>
             </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         </div>
     </header>
 
@@ -30,19 +39,21 @@
         <section>
             <h1>Login</h1>
             <form action="/login" method="post">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
+                <label for="usrname">Username:</label>
+                <input type="text" id="usrname" name="username" required>
                 
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="password" required>
                 
-                <button type="submit" class="btn">Login</button>
+                <button type="submit" class="btn" onclick="Login()">Login</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 [App Name]. All rights reserved.</p>
+        <p>&copy; 2024 CarbonX. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
+    <script src="accounts.js"></script>
 </body>
 </html>

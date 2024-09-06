@@ -16,6 +16,7 @@
                 <a href="emission.html">Emission</a>
                 <a href="carbon-neutrality.html">Carbon Neutrality</a>
                 <a href="dashboard.html">Dashboard</a>
+                <a href="News.html">News</a>
             </div>
         </section>
         <div class="container">
@@ -28,6 +29,7 @@
                     <li><a href="emission.html">Emission Estimation</a></li>
                     <li><a href="carbon-neutrality.html">Carbon Neutrality</a></li>
                     <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="News.html">News</a></li>
                 </ul>
             </nav>
             <div class="auth-buttons">
@@ -45,7 +47,6 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>[Back]</th>
                             <th>Activity</th>
                             <th>Quantity</th>
                             <th>Units</th>
@@ -54,26 +55,44 @@
                     <tbody>
                         <tr>
                             <td>Excavation</td>
-                            <td><input type="number" id="excavation" value="500" aria-label="Excavation"></td>
+                            <td><input type="number" id="excavation" value="0" aria-label="Excavation"></td>
                             <td>Tons</td>
                         </tr>
                         <tr>
-                            <td>Transportation</td>
-                            <td><label>Transportation:<input type="number" id="transportation" value="100" aria-label="Excavation"></label></td>
+                            <td>Petrol</td>
+                            <td><input type="number" id="transportation" value="0" aria-label="Excavation"></td>
+                            <td>Kms</td>
+                        </tr>
+                        <tr>
+                            <td>Diesel</td>
+                            <td><input type="number" id="transportation" value="0" aria-label="Excavation"></td>
+                            <td>Kms</td>
+                        </tr>
+                        <tr>
+                            <td>Electric</td>
+                            <td><input type="number" id="transportation" value="0" aria-label="Excavation"></td>
+                            <td>Kms</td>
+                        </tr>
+                        <tr>
+                            <td>CNG</td>
+                            <td><input type="number" id="transportation" value="0" aria-label="Excavation"></td>
+                            <td>Kms</td>
+                        </tr>
+                        <tr>
+                            <td>Coal</td>
+                            <td><input type="number" id="transportation" value="0" aria-label="Excavation"></td>
                             <td>Kms</td>
                         </tr>
                     </tbody>
-                </table>
                 <button type="button" class="btn" onclick="calculateEmissions()">Calculate Emissions</button>
             </form>
-
-            <section id="results">
+            <div id="results">
                 <h2>Results</h2>
                 <div id="emission-results">
                     <p class="results"></p>
                     <!-- Display Total Emissions Here -->
                 </div>
-            </section>
+            </div>
         </section>
 
         <section>
@@ -122,7 +141,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 [Your Company]. All rights reserved.</p>
+        <p>&copy; 2024 CarbonX. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>

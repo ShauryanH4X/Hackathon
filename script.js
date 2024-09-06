@@ -63,3 +63,6 @@ function close_Nav() {
 function openNav2() {
     document.getElementById("Trends").style.width = "300px"; // Open the section
 }
+function profile(user){
+    document.getElementById('auth').innerHTML = '<button type="button" class="btn">'+user+'</button>';
+}

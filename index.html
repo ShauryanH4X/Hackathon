@@ -35,9 +35,9 @@
                 </ul>
             </nav>
             </div>
-            <div class="auth-buttons">
-                <button class="btn" id="loginBtn">Login</button>
-                <button class="btn secondary" id="registerBtn">Register</button>
+            <div class="auth-buttons" id="auth">
+                <button class="btn" id="loginBtn"><a href="login.html">Login</a></button>
+                <button class="btn secondary" id="registerBtn"><a href="register.html">Register</a></button>
             </div>
             <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         </div>
@@ -45,7 +45,7 @@
 
     <main>
         <section class="hero">
-            <h1>WELCOME TO CarbonX</h1>
+            <h1>Welcome To CarbonX</h1>
             <p>A tool to help Indian coal mines achieve carbon neutrality through emission estimation and sustainable practices.</p>
             <a href="get-started.html" class="btn" style="margin-left:40px;margin-right:40px;">Get Started</a>
             <a href="learn-more.html" class="btn secondary">Learn More</a>
@@ -66,24 +66,6 @@
                         <a href="https://www.sciencedirect.com/topics/engineering/clean-coal-technology">Reference</a>
                     </li>
                     <li>
-                        NPTEL/Local Chapter
-                    </li>
-                    <li>
-                        Online Application form for No Dues
-                    </li>
-                    <li>
-                        AICTE National Innovation and Startup Policy
-                    </li>
-                    <li>
-                        AICTE
-                    </li>
-                    <li>
-                        R.G.P.V Bhopal
-                    </li>
-                    <li>
-                        Right to Information Act
-                    </li>
-                    <li>
                         <a href="https://youtu.be/bYb7YLsXvzg?si=0FZImMCyDWoOZXQJ">Informative Video</a>
                     </li>
                     <br>
@@ -98,24 +80,6 @@
                     </li>
                     <li>
                         <a href="https://www.sciencedirect.com/topics/engineering/clean-coal-technology">Reference</a>
-                    </li>
-                    <li>
-                        NPTEL/Local Chapter
-                    </li>
-                    <li>
-                        Online Application form for No Dues
-                    </li>
-                    <li>
-                        AICTE National Innovation and Startup Policy
-                    </li>
-                    <li>
-                        AICTE
-                    </li>
-                    <li>
-                        R.G.P.V Bhopal
-                    </li>
-                    <li>
-                        Right to Information Act
                     </li>
                     <li>
                         <a href="https://youtu.be/bYb7YLsXvzg?si=0FZImMCyDWoOZXQJ">Informative Video</a>
@@ -148,38 +112,7 @@
     <footer>
         <p>&copy; 2024 CarbonX. All rights reserved.</p>
     </footer>
-
-    <!-- Login Modal -->
-    <div id="loginModal" class="modal">
-        <div class="modal-content">
-            <span class="close" id="loginClose">&times;</span>
-            <h2>Login</h2>
-            <form id="loginForm">
-                <label for="loginUsername">Username:</label>
-                <input type="text" id="loginUsername" name="username" required>
-                <label for="loginPassword">Password:</label>
-                <input type="password" id="loginPassword" name="password" required>
-                <button type="submit" class="btn">Login</button>
-            </form>
-        </div>
-    </div>
-
-    <!-- Register Modal -->
-    <div id="registerModal" class="modal">
-        <div class="modal-content">
-            <span class="close" id="registerClose">&times;</span>
-            <h2>Register</h2>
-            <form id="registerForm">
-                <label for="registerUsername">Username:</label>
-                <input type="text" id="registerUsername" name="username" required>
-                <label for="registerEmail">Email:</label>
-                <input type="email" id="registerEmail" name="email" required>
-                <label for="registerPassword">Password:</label>
-                <input type="password" id="registerPassword" name="password" required>
-                <button type="submit" class="btn">Register</button>
-            </form>
-        </div>
-    </div>
     <script src="script.js"></script>
+    <script src="accounts.js"></script>
 </body>
 </html>
