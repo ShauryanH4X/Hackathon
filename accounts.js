@@ -39,35 +39,35 @@ function save() {
     mail = document.getElementById('Email').value.trim();
     pass1 = document.getElementById('Password').value;
     pass2 = document.getElementById('Password2').value;
-    if(mail !== "" && pass1 !== "" && pass2 !== "") {
-        if(pass1 !== pass2) {
+
+    if (mail !== "" && pass1 !== "" && pass2 !== "") {
+        if (pass1 !== pass2) {
             window.alert("Password Mismatch");
         } else {
+            localStorage.setItem('username', username);
+            localStorage.setItem('password', pass1);
             window.location.href = "./index.html";
         }
     } else {
         window.alert("Please fill out the registration form.");
     }
 };
-function Login(){
-    let usr=document.getElementById('usr').value.trim();
-    let pass=document.getElementById('pass').value;
-    if(usr !== "" && pass !== ""){
-        if(usr===username && pass===pass1){
-            window.location.href = "./index.html";
-            localStorage.setItem('loggedInUser', usr);
-        }
-        else{
-            window.alert("Wrong username or password");
-        }
-    }
-    else
+
+function Login() {
+    let usr = document.getElementById('usrname').value.trim();
+    let pass = document.getElementById('pass').value;
+    let storedUsername = localStorage.getItem('username');
+    let storedPassword = localStorage.getItem('password');
+
+    if (usr === "" || pass === "") {
         window.alert("Fill Login Credentials");
-};
-document.addEventListener("DOMContentLoaded", function() {
-    let loggedInUser = localStorage.getItem('loggedInUser');
-    
-    if (loggedInUser) {
-        document.getElementById('auth').innerHTML = '<button type="button" class="btn">' + loggedInUser + '</button>';
+        return;
     }
-});
+    if (usr === storedUsername && pass === storedPassword) {
+        localStorage.setItem('use', usr);
+        window.location.href = "./index.html";
+    } else {
+        window.alert("Wrong username or password");
+        return;
+    }
+};
