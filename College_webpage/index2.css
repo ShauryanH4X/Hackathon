@@ -1,0 +1,125 @@
+.Highlights
+{
+    padding:10px;
+
+    margin:50px 100px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.Highlights ul
+{
+    display: inline-block;
+}
+.Highlights li
+{
+    padding:10px;
+    list-style-type:square;
+    border-bottom: 2px solid grey;
+    font-size: 20px;
+}
+.Highlights h1{
+    margin-top: 0px;
+    font-size: 50px;
+    font-family:cursive;
+    color: navy;
+}
+.Highlights h1:hover{
+    color:red;
+}
+.High_Sec
+{
+    overflow: auto;
+    background-color:lightgrey;
+}
+.Side_img
+{
+    float: right;
+}
+.Big_container
+{
+    overflow: auto;
+    background-image: url(images/bg1.jpg);
+}
+.CLG_vedio
+{
+    display: inline-block;
+    text-align: center;
+    color: white;
+    font-size:larger;
+    margin:100px;
+    padding: 20px;
+    width: 300px;
+    background-image: url(images/video_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.CLG_vedio .vedio_head
+{
+    background-color: gold;
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+.Sub_Div
+{
+    margin-top: 40px;
+    display: inline-block;
+}
+.Sub_Container
+{
+    display: inline-block;
+    background-color: blueviolet;
+    margin:25px;
+    padding:5px;
+    width:250px;
+    text-align: center;
+    color: white;
+    font-size:larger;
+}
+.bottom_info
+{
+    background-color:navy;
+    color: white;
+}
+.IMP_links
+{
+    padding:10px 50px;
+    margin: 0px 0px 0px 100px;
+    display:inline-block;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+.IMP_links ul
+{
+    display:inline-block;
+    font: 1em sans-serif;
+    line-height: 25px;
+}
+.Get_touched
+{
+    margin-top: 0px;
+    display: inline-block;
+    padding:0px 30px 30px 30px;
+    border-right: 1px solid white;
+}
+.Get_touched_up a
+{
+    color:white;
+    text-decoration: none;
+}
+.footer_location a
+{
+    color:black;
+    background-color: white;
+    padding:5px 100px;
+    border-radius: 5px;
+    text-decoration:none;
+}
+.footer_location a:hover
+{
+    background-color: red;
+    color:white;
+}
+.Get_touched_up
+{
+    display: inline-block;
+}

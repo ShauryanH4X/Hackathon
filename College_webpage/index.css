@@ -1,0 +1,220 @@
+body
+{
+    margin:0;
+    padding:0;
+}
+.header 
+{
+    background-color:lightseagreen;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    padding-right: 20px;
+}
+.header button 
+{
+    background-color:lightseagreen;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover
+{
+    background-color:Red;
+}
+.header button a 
+{
+    font-size:1.2em;
+    text-decoration: none;
+    color: white;
+    padding: 5px 5px;
+    display: block;
+}
+.Sec_dir
+{
+    background-color:lightgreen;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.director
+{
+    background-color:lightgreen;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+.dir_side1
+{
+    padding: 20px;
+    color:white;
+    background-color: red;
+    display: inline-block;
+}
+.dir_side1 h2
+{
+    text-align: center;
+    border-bottom: 1px solid white;
+    color: white;
+}
+.dir_side1 p{
+    padding: 10px;
+    line-height: 30px;
+    font-size: large;
+}
+.dir_side2
+{
+    background-color: chocolate;
+    padding: 0px;
+    margin:0px;
+    width: 400px;
+    display: inline-block;
+
+}
+.dir_side3
+{
+    padding: 20px;
+    color:white;
+    background-color: red;
+    display: inline-block;
+}
+.dir_side3 h2
+{
+    text-align: center;
+    border-bottom: 1px solid white;
+    color: white;
+}
+.dir_side3 p{
+    padding: 10px;
+    line-height: 30px;
+    font-size: large;
+}
+.banner
+{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display:inline;
+}
+.CLG_intro h1{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.CLG_intro h2
+{
+    
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.CLG_intro h4{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.banner img
+{
+    padding: 10px;
+    margin: 10px;
+}
+.CLG_intro
+{
+    background-image: url(/images/header_bg.jpg);
+    background-repeat: no-repeat;
+    background-size:1000px 200px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display:inline-block;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 10px;
+}
+.Section3
+{
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+}
+.Section3 button
+{
+    padding:5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    color:white;
+    background-color: darkblue;
+    font: 1em sans-serif;
+    border:none;
+    margin:5px;
+    border-radius: 5px;
+}
+.container #img1
+{
+    height: fit-content;
+    display: inline-block;
+    transform: translateX(0px);
+    width:500px;
+    margin:0px;
+}
+.container #img2
+{
+    height: fit-content;
+    width:500px;
+    display: inline-block;
+    transform: translateX(550px);
+    margin:0px;
+}
+.container #img3
+{
+    height: fit-content;
+    display: inline-block;
+    transform: translateX(1100px);
+    width:500px;
+    margin:0px;
+}
+.container 
+{
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    margin:0px auto;
+}
+.moving-image 
+{
+    width:500px;
+    display:inline-block;
+    position: relative;
+    animation: moveLeftToRight 5s linear infinite;
+    margin:0px auto;
+}
+
+@keyframes moveLeftToRight 
+{
+    0%
+    {
+        transform: translateX(0%) ;
+    }
+    100% 
+    {
+        transform: translateX(400%);
+    }
+}
+.dropDown
+{
+    display: none;
+    background-color: blue;
+    width: 300px;
+    z-index: 4;
+}
+.dropDown a
+{
+    color:white;
+    text-decoration:none;
+    display:block;
+}
+.dropbtn:hover
+{
+    background-color: red;
+}
+.dropbtn:hover .dropDown
+{
+    z-index:0;
+}
